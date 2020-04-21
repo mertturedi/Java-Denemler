@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/arkaplan">
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TOPLAM ÖLÜM"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/toplamölüm"
+    android:textSize="25dp"
+    android:textColor="#ffffff"
+    android:layout_marginTop="15dp"
+    android:fontFamily="serif"
+
+></TextView>
+
+
+    <TextView
+        android:id="@+id/toplamvaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalDeaths"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:fontFamily="serif"
+        android:text="TOPLAM VAKA"
+        android:textColor="#ffffff"
+        android:textSize="23dp"></TextView>
+
+    <TextView
+        android:id="@+id/toplamkurtarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalCases"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="TOPLAM KURTULAN"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:fontFamily="serif"></TextView>
+
+    <TextView
+        android:id="@+id/yenivakalar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalRecovered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="YENİ VAKALAR"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+       ></TextView>
+
+    <TextView
+        android:id="@+id/yeniölümler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newCases"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="YENİ ÖLÜMLER"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:fontFamily="serif"></TextView>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalDeaths"
+        android:gravity="center"
+        android:textColor="#727272"
+        android:layout_below="@+id/toplamölüm"
+        android:background="@drawable/edittex"
+        android:textSize="25dp"
+
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalCases"
+        android:gravity="center"
+        android:layout_below="@+id/toplamvaka"
+        android:textColor="#727272"
+        android:textSize="20dp"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/totalRecovered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplamkurtarma"
+        android:gravity="center"
+        android:textColor="#727272"
+        android:textSize="16dp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newDeaths"
+        android:layout_marginTop="15dp"
+        android:id="@+id/boş"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statisticTakenAt"
+        android:layout_below="@id/boş"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/cardview_dark_background"
+       ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newCases"
+        android:gravity="center"
+        android:layout_below="@+id/yenivakalar"
+        android:textColor="#727272"
+        android:textSize="15dp"
+       ></TextView>
+
+
+    <TextView
+        android:id="@+id/newDeaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yeniölümler"
+        android:layout_marginBottom="-17dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="#727272"></TextView>
+
+    <Button
+
+        android:id="@+id/gecis"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="13dp"
+        android:width="10dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="lİSTE"
+        android:fontFamily="serif"
+        android:textColor="#ffffff"></Button>
+
+
+
+
+
+
+</RelativeLayout>
